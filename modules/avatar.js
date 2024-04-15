@@ -37,6 +37,7 @@ const colorMap = ([r, g, b]) => {
 
 const baseColors = [
   // Index matters here, it's a trinary-based color space.
+  { trinaryCode: "000", color: "black", hue: undefined },
   { trinaryCode: "001", color: "navyblue", hue: 240 },
   { trinaryCode: "002", color: "blue", hue: 240 },
   { trinaryCode: "010", color: "darkgreen", hue: 120 },
@@ -49,6 +50,7 @@ const baseColors = [
   { trinaryCode: "101", color: "purple", hue: 300 },
   { trinaryCode: "102", color: "violet", hue: 270 },
   { trinaryCode: "110", color: "darkyellow", hue: 60 },
+  { trinaryCode: "111", color: "grey", hue: undefined },
   { trinaryCode: "112", color: "lightblue", hue: 240 },
   { trinaryCode: "120", color: "chartreuse", hue: 90 },
   { trinaryCode: "121", color: "lightgreen", hue: 120 },
@@ -61,6 +63,7 @@ const baseColors = [
   { trinaryCode: "212", color: "lightmagenta", hue: 300 },
   { trinaryCode: "220", color: "yellow", hue: 60 },
   { trinaryCode: "221", color: "lightyellow", hue: 60 },
+  { trinaryCode: "222", color: "white", hue: undefined },
 ];
 
 async function getBaseColor(member) {
